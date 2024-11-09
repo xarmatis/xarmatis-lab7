@@ -17,8 +17,8 @@ export class SurveyFormComponent {
 
   readonly email = new FormControl('', [Validators.required, Validators.email]);
   nameControl = new FormControl('', [Validators.required]);
-  ageControl = new FormControl('', [Validators.required])
-
+  ageControl = new FormControl('', [Validators.required]);
+  feedback = new FormControl('');
   errorMessage = signal('');
 
   constructor() {
