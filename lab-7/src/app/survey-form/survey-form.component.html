@@ -1,0 +1,71 @@
+<div class="container">
+
+    <div class="top">
+
+        <h1 id="title">Tech4Good Survey</h1>
+        
+    </div>
+
+    <div class="form">
+
+      <p class="direction">Enter your name</p>
+      <form class="name-form">
+        <mat-form-field class="example-full-width">
+          <mat-label></mat-label>
+          <input matInput placeholder="Ex. John Doe" [formControl]="nameControl">
+        </mat-form-field>
+      </form>
+
+
+      <!--- AGE FORM-->
+      <p class="direction">Enter your age</p>
+      <form class="age-form">
+        <mat-form-field class="example-full-width">
+          <mat-label></mat-label>
+          <input matInput placeholder="Ex. 27" [formControl]="ageControl">
+        </mat-form-field>
+      </form>
+
+      
+
+
+
+
+        <p class="direction">Enter email</p>
+        <div class="email-container">
+            <mat-form-field>
+              <mat-label></mat-label>
+              <input
+                matInput
+                placeholder="pat@example.com"
+                [formControl]="email"
+                (blur)="updateErrorMessage()"
+                required
+              />
+              @if (email.invalid) {
+                <mat-error>{{errorMessage()}}</mat-error>
+              }
+            </mat-form-field>
+        </div>
+
+      <p class="direction">Enter some insight</p>
+      <form>
+        <mat-form-field class="example-full-width">
+          <mat-label></mat-label>
+          <textarea matInput placeholder="Ex. I like this part of..."></textarea>
+        </mat-form-field>
+      </form>
+
+
+
+
+    </div>
+
+
+
+
+
+   
+
+
+</div>
