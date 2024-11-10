@@ -1,2 +1,5 @@
-<app-survey-form></app-survey-form>
+<app-survey-form (formData)="onFormDataReceived($event)"></app-survey-form>
+<app-form-modal [receivedData]="formModalData"></app-form-modal>
+
+
 <router-outlet />

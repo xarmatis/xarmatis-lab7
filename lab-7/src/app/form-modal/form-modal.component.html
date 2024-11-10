@@ -1,1 +1,14 @@
-<p>form-modal works!</p>
+<!-- <app-form-modal
+  [email]="email"
+  [nameControl]="nameControl"
+  [ageControl]="ageControl"
+  [feedback]="feedback">
+</app-form-modal>
+ -->
+ <div *ngIf="receivedData">
+    <h2>User Input Summary</h2>
+    <p><strong>Name:</strong> {{ receivedData.name }}</p>
+    <p><strong>Age:</strong> {{ receivedData.age }}</p>
+    <p><strong>Email:</strong> {{ receivedData.email }}</p>
+    <p><strong>Feedback:</strong> {{ receivedData.feedback }}</p>
+  </div>

@@ -1,16 +1,22 @@
+import { CommonModule, NgIf } from '@angular/common';
 import { Component, input, Input } from '@angular/core';
-import { FormControl } from '@angular/forms';
+import { Form, FormControl } from '@angular/forms';
 @Component({
   selector: 'app-form-modal',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './form-modal.component.html',
   styleUrl: './form-modal.component.scss'
 })
 export class FormModalComponent {
 
-  /* @Input() nameControl: FormControl;
-  @Input() ageControl: FormControl;
-  @Input() email: FormControl;
-  @Input() feedback: FormControl; */
+
+  /* formModalData: any;
+
+  onFormDataReceived(data: any) {
+    this.formModalData = data;
+  }
+ */
+
+  @Input() receivedData: any;
 }
