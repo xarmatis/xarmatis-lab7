@@ -40,7 +40,7 @@ export class SurveyFormComponent {
   }
 
   submitForm() {
-    // Collect the form data
+   
     if (this.nameControl.valid && this.ageControl.valid && this.feedback.valid) {
       const formValues = {
         email: this.email.value,
@@ -53,7 +53,7 @@ export class SurveyFormComponent {
 
       alert('Please fill out all required fields')
     }
-    // Emit the data to the parent
+    
     
 
 

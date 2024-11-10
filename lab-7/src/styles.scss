@@ -1,0 +1,4 @@
+::ng-deep .mat-dialog-container {
+    z-index: 10000;  /* A very high number to ensure it stays on top */
+  }
+  

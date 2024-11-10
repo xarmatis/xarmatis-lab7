@@ -5,10 +5,11 @@
   [feedback]="feedback">
 </app-form-modal>
  -->
- <div *ngIf="receivedData">
+ <div *ngIf="data">
     <h2>User Input Summary</h2>
-    <p><strong>Name:</strong> {{ receivedData.name }}</p>
-    <p><strong>Age:</strong> {{ receivedData.age }}</p>
-    <p><strong>Email:</strong> {{ receivedData.email }}</p>
-    <p><strong>Feedback:</strong> {{ receivedData.feedback }}</p>
+    <p><strong>Name:</strong> {{ data.name }}</p>
+    <p><strong>Age:</strong> {{ data.age }}</p>
+    <p><strong>Email:</strong> {{ data.email }}</p>
+    <p><strong>Feedback:</strong> {{ data.feedback }}</p>
   </div>
+  <button mat-button (click)="closeModal()">Close</button>
